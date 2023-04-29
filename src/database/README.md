@@ -1,0 +1,1 @@
+The database section is used as a middleware between various types of DB, including the core DB
