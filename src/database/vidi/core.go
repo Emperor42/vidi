@@ -4,6 +4,6 @@ import (
 	"fmt"
 )
 
-func tempFlag(){
+func TempFlag(){
 	fmt.Println("Hello world")
 }
