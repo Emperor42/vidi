@@ -1,84 +1,31 @@
-main {
-    display: flex;
-    flex-wrap: wrap;
-    flex-grow: 1;
-    flex-shrink: 0;
-}
-
-body{
+.core{
     margin: 0;
     padding: 0;
 }
 
-main div {
-    flex-direction: row;
-}
-
-main div section {
-    flex-direction: column;
-}
-
-main article {
-    box-shadow: 0 1rem 2rem 0 rgba(0,0,0,0.2);
-    transition: 0.3s;
-    min-height: 200px;
-    min-width: 200px;
-    border: 0.05rem solid black;
-    display: flex;
-    flex-direction: column;
-}
-
-main article header {
-    border-bottom: 1rem black;
-    margin: 0.1rem;
-    padding: 0.1rem;
+.core-header {
     background-color: white;
+    min-height: 1rem;
 }
 
-main article main {
-    margin: 0.1rem;
-    padding: 0.1rem;
+.core-footer {
     background-color: white;
-}
-
-main article footer {
-    border-top: 1rem black;
-    margin: 0.1rem;
-    padding: 0.1rem;
+    height:100%;
     align-items: center;
+    text-align: center;
+}
+
+.core-footer {
     background-color: white;
-}
-
-main article:hover {
-    box-shadow: 0 2rem 4rem 0 rgba(0,0,0,0.2);
-}
-
-header {
-    background-color: grey;
-}
-
-footer {
-    background-color: bisque;
-}
-
-main {
-    background-color: blanchedalmond;
     margin: 1rem;
     padding: 1rem;
 }
-
-/*Classes*/
 
 .core-flex {
     display: flex;
     flex-wrap: wrap;
     flex-grow: 1;
     flex-shrink: 0;
-}
-
-.core {
-    margin: 0;
-    padding: 0;
 }
 
 .flex-row {
@@ -90,10 +37,10 @@ main {
 }
 
 .card {
-    box-shadow: 0 1rem 2rem 0 rgba(0,0,0,0.2);
+    box-shadow: 0 0.25rem 0.5rem 0 black;
     transition: 0.3s;
-    min-height: 200px;
-    min-width: 200px;
+    min-height: 10rem;
+    min-width: 10rem;
     border: 0.05rem solid black;
     display: flex;
     flex-direction: column;
@@ -106,7 +53,7 @@ main {
     background-color: white;
 }
 
-.card-content{
+.card-content {
     margin: 0.1rem;
     padding: 0.1rem;
     background-color: white;
@@ -120,20 +67,18 @@ main {
     background-color: white;
 }
 
-.card:hover {
-    box-shadow: 0 2rem 4rem 0 rgba(0,0,0,0.2);
+.card-hover {
+    box-shadow: 0 0.5rem 1rem 0 black;
 }
 
-.core-header {
-    background-color: grey;
+
+.accordian{
+    box-shadow: 0 0.25rem 0.5rem 0 black;
+    transition: 0.3s;
+    min-height: 10rem;
+    min-width: 10rem;
+    border: 0.05rem solid black;
 }
 
-.core-footer {
-    background-color: bisque;
-}
 
-.core-content {
-    background-color: blanchedalmond;
-    margin: 1rem;
-    padding: 1rem;
-}
+/*Classes*/
