@@ -9,12 +9,16 @@ import (
 
 func main() {
 
+    system := system.Init()
+
+    core:= vidi.Init()
+
+    log.Println(system)
+
+    log.Println(core)
+
     http.Handle("/", http.FileServer(http.Dir("./server")))
 
     log.Fatal(http.ListenAndServe(":8082", nil))
-
-    system.TempFlag()
-
-    vidi.TempFlag()
 
 }

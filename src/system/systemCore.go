@@ -4,6 +4,11 @@ import (
 	"fmt"
 )
 
-func TempFlag(){
+type SystemAux struct {
+	name string
+}
+
+func Init() SystemAux{
 	fmt.Println("Hello world")
+	return SystemAux{name:"temp"}
 }

@@ -18,3 +18,12 @@ type GID interface {
 	Access(uint64) uint64
 	Check(GID) bool
 }
+
+type CoreVIDI struct {
+	name string
+}
+
+func Init() CoreVIDI{
+	fmt.Println("Hello world")
+	return CoreVIDI{name:"temp"}
+}

@@ -3,7 +3,11 @@ main {
     flex-wrap: wrap;
     flex-grow: 1;
     flex-shrink: 0;
+}
 
+body{
+    margin: 0;
+    padding: 0;
 }
 
 main div {
@@ -15,12 +19,38 @@ main div section {
 }
 
 main article {
-    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    box-shadow: 0 1rem 2rem 0 rgba(0,0,0,0.2);
     transition: 0.3s;
+    min-height: 200px;
+    min-width: 200px;
+    border: 0.05rem solid black;
+    display: flex;
+    flex-direction: column;
+}
+
+main article header {
+    border-bottom: 1rem black;
+    margin: 0.1rem;
+    padding: 0.1rem;
+    background-color: white;
+}
+
+main article main {
+    margin: 0.1rem;
+    padding: 0.1rem;
+    background-color: white;
+}
+
+main article footer {
+    border-top: 1rem black;
+    margin: 0.1rem;
+    padding: 0.1rem;
+    align-items: center;
+    background-color: white;
 }
 
 main article:hover {
-    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+    box-shadow: 0 2rem 4rem 0 rgba(0,0,0,0.2);
 }
 
 header {
@@ -33,4 +63,77 @@ footer {
 
 main {
     background-color: blanchedalmond;
+    margin: 1rem;
+    padding: 1rem;
+}
+
+/*Classes*/
+
+.core-flex {
+    display: flex;
+    flex-wrap: wrap;
+    flex-grow: 1;
+    flex-shrink: 0;
+}
+
+.core {
+    margin: 0;
+    padding: 0;
+}
+
+.flex-row {
+    flex-direction: row;
+}
+
+.flex-column {
+    flex-direction: column;
+}
+
+.card {
+    box-shadow: 0 1rem 2rem 0 rgba(0,0,0,0.2);
+    transition: 0.3s;
+    min-height: 200px;
+    min-width: 200px;
+    border: 0.05rem solid black;
+    display: flex;
+    flex-direction: column;
+}
+
+.card-header {
+    border-bottom: 1rem black;
+    margin: 0.1rem;
+    padding: 0.1rem;
+    background-color: white;
+}
+
+.card-content{
+    margin: 0.1rem;
+    padding: 0.1rem;
+    background-color: white;
+}
+
+.card-footer {
+    border-top: 1rem black;
+    margin: 0.1rem;
+    padding: 0.1rem;
+    align-items: center;
+    background-color: white;
+}
+
+.card:hover {
+    box-shadow: 0 2rem 4rem 0 rgba(0,0,0,0.2);
+}
+
+.core-header {
+    background-color: grey;
+}
+
+.core-footer {
+    background-color: bisque;
+}
+
+.core-content {
+    background-color: blanchedalmond;
+    margin: 1rem;
+    padding: 1rem;
 }
