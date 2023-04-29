@@ -13,8 +13,8 @@ func main() {
 
     log.Fatal(http.ListenAndServe(":8082", nil))
 
-    system.TempFlag();
+    system.TempFlag()
 
-    vidi.TempFlag();
+    vidi.TempFlag()
 
 }
