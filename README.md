@@ -2,7 +2,7 @@
 
 IN DEVELOPMENT
 
-A Open Source DBMS with an integrated web-based management server and API this will be a noSQL based system which relies upon XML documents based on the HTML Form element to manage 
-XML nodes are then linked and changes are tracked accordingly data can be queried directly from the XML document using javascript
+Visual Internet Database Interface (VIDI): Allows for the creation of a noSQL database which is based on HTML forms to store the data both records and structure of the records.
+The insights can be furthered by processing down into XML documets, which can be directly viewed or parsed as JSON payloads.
 
 Well Integrated with VENI and VICI
