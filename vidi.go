@@ -13,7 +13,7 @@ func (v *VidiContext) ProcessBody() {
 	fmt.Println("temp")
 }
 
-func (v *VidiContext) Handler(w http.ResponseWriter, r *http.Request) {
+func (v *VidiContext) ServeHTTP(w http.ResponseWriter, r *http.Request) {
 	if r.URL.Path != "/call" {
 		http.Error(w, "404 not found.", http.StatusNotFound)
 		return
