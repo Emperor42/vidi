@@ -14,7 +14,7 @@ func (v *VidiContext) ProcessBody() {
 }
 
 func (v *VidiContext) ServeHTTP(w http.ResponseWriter, r *http.Request) {
-	if r.URL.Path != "/data" {
+	if r.URL.RequestURI() != "/data" {
 		http.Error(w, "404 not found.", http.StatusNotFound)
 		return
 	}
