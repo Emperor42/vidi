@@ -6,7 +6,7 @@ import (
 )
 
 type VidiContext struct {
-	systemTest string
+	Name string
 }
 
 func (v *VidiContext) ProcessBody() {
