@@ -20,9 +20,11 @@ func (v *VidiContext) ServeHTTP(w http.ResponseWriter, r *http.Request) {
 	}
 
 	if r.Method != "GET" {
-		http.Error(w, "Method is not supported.", http.StatusNotFound)
-		return
+		w.Header().Set("Content-Type", "text/html")
+		value := []byte(v.Name + "\n")
+		w.Write(value)
 	}
 
 	fmt.Fprintf(w, "Call Complete!")
+	return
 }
