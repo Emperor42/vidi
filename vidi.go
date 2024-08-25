@@ -24,5 +24,5 @@ func (v *VidiContext) ServeHTTP(w http.ResponseWriter, r *http.Request) {
 		fmt.Fprintf(w, v.Name)
 	}
 
-	fmt.Fprintf(w, "Call Complete!")
+	fmt.Fprintf(w, "VIDI - Call Complete!")
 }
