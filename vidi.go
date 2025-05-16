@@ -5,6 +5,14 @@ import (
 	"net/http"
 )
 
+type VidiInterface interface {
+	Connect(any) any
+	Create(any) any
+	Read(any) any
+	Update(any) any
+	Delete(any) any
+}
+
 type VidiContext struct {
 	Name string
 }
