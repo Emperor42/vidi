@@ -24,9 +24,12 @@ type VidiContext struct {
 	dataManager VidiInterface
 }
 
-func InitContext(nameValue, idName, cfgName string, dm VidiInterface) *VidiContext {
+func InitContext(nameValue string, dm VidiInterface) *VidiContext {
 	var vc VidiContext
 	vc.Name = nameValue
+	if dm == nil {
+		dm = InitCore()
+	}
 	vc.dataManager = dm
 	return &vc
 }
