@@ -5,6 +5,8 @@ import (
 	"fmt"
 	"net/http"
 	"net/url"
+	"path"
+	"strings"
 )
 
 type VidiInterface interface {
@@ -192,6 +194,16 @@ func InitCore() *VidiCore {
 	vc.kvMap = make(map[string]([]uint64))
 	vc.fileList = make([]string, 0)
 	return &vc
+}
+
+func (v *VidiContext) Comply(r *http.Request) bool {
+	base := path.Base(r.URL.Path)
+	switch strings.ToLower(base) {
+	case v.Name:
+		return true
+	default:
+		return false
+	}
 }
 
 func (v *VidiContext) ProcessRequest(w http.ResponseWriter, r *http.Request) {
